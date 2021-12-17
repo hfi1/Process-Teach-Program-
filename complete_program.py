@@ -629,12 +629,12 @@ class Page3(Page):  #this is the page for the RDX
                
 #calculate botton for new shot time and mix ratio
        button1 = tk.Button(self, text = 'Calculate New Shot Time', command = values, bg='orange').place(x=160 , y=220)
-class MainView(tk.Frame):
+class MainView(tk.Frame): #main file controls the output of all the pages
     def __init__(self, *args, **kwargs):
         tk.Frame.__init__(self, *args, **kwargs)
-        p1 = Page1(self, bg='light blue')
-        p2 = Page2(self, bg='light blue')
-        p3 = Page3(self, bg ='light blue')
+        p1 = Page1(self, bg='light blue') #HR3 file 
+        p2 = Page2(self, bg='light blue') #ODY file
+        p3 = Page3(self, bg ='light blue') #RDX file 
 
         buttonframe = tk.Frame(self)
         container = tk.Frame(self)

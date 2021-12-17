@@ -435,7 +435,7 @@ class Page2(Page):
 #calculate botton for new shot time and mix ratio
        button1 = tk.Button(self, text = 'Calculate New Shot Time', command = values, bg='orange').place(x=160 , y=220)
 
-class Page3(Page):
+class Page3(Page):  #this is the page for the RDX 
    def __init__(self, *args, **kwargs):
        Page.__init__(self, *args, **kwargs)
        rdx_label = tk.Label(self, text = "RDX Program| Quality Spec (11N-15N| Nominal ILD is 13N", bg ='light green').place(x=270, y =20)
